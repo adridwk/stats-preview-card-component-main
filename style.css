@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  --font-text: 'Lexend Deca', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+
+  --color-main-bg: hsl(233, 47%, 7%);
+  --color-card-bg: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%);
+
+  --color-heading: hsl(0, 0%, 100%);
+  --color-text: hsla(0, 0%, 100%, 0.75);
+  --color-stats: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-text);
+  color: var(--color-text);
+  font-size: 0.9375rem;
+  line-height: 1.6rem;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+}
+
+.title span {
+  color: var(--color-accent);
+}
+
+.title {
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.main {
+  background-color: var(--color-main-bg);
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  padding: 10vh 0;
+}
+
+.hero {
+  background-color: var(--color-card-bg);
+
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero__img {
+  position: relative;
+  min-height: 250px;
+  height: 30%;
+  background-image: url('images/image-header-mobile.jpg');
+  background-size: cover;
+  background-position: left top;
+}
+
+.hero__img:after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-accent);
+  mix-blend-mode: multiply;
+  inset: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.hero__text {
+  margin-bottom: 2rem;
+}
+
+.stat {
+  margin-bottom: 2rem;
+}
+
+.stat h2 {
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+
+.stat p {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: var(--color-stats);
+  letter-spacing: 1px;
+}
+
+@media (min-width: 850px) {
+  .hero {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .hero__img {
+    width: 45%;
+    min-height: 380px;
+    height: 100%;
+    background-image: url('images/image-header-desktop.jpg');
+  }
+
+  .container {
+    width: 50%;
+    max-width: 400px;
+    padding: 2em 0.5em;
+  }
+
+  .hero__stats {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stat {
+    margin-bottom: 0;
+  }
+}
+
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-text);
+}
