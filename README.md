@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://adridwk.github.io/stats-preview-card-component-main/)
 
 ### My process
 
@@ -54,7 +53,5 @@ I still need practise with background images and how to position them, particula
 - [Kevin Powell on background image positioning](https://www.youtube.com/watch?v=3T_Jy1CqH9k) - This helped me with deciding on a position.
 
 ## Author
+- Frontend Mentor - [@adridwk](https://www.frontendmentor.io/profile/adridwk)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
